@@ -1,0 +1,15 @@
+@import "../styles/global.scss";
+
+.layout {
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    background-color: $bg;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: scroll;
+}
+
+.trans {
+    background-color: rgba(23, 33, 45, 0.5)
+}

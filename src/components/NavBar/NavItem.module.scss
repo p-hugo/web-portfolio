@@ -1,0 +1,55 @@
+@import '../../styles/global.scss';
+.item {
+    color: $font-color;
+    text-decoration: none;
+    font-family: $font;
+    font-weight: 100;
+    font-size: 30px;
+
+    // sizing:
+    margin: 0 20px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    transition: $trans;
+
+    @media #{$break-large} {
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transition: $trans;
+            width: 0px;
+            height: 1px;
+        }
+
+        &:hover {
+            color: $blue-intense;
+        }
+    }
+}
+
+.active {
+    color: $blue-intense;
+    text-shadow: 0 0 100px $blue-intense;
+
+    @media #{$break-large} {
+        &::after {
+            background-color:  $blue-intense;
+            box-shadow:  0 0px 20px 1px $blue-intense;
+            animation: slide .25s linear 0s 1 forwards;
+          }
+          
+    }
+}
+
+@keyframes slide{
+    0% {
+      left:50%;
+      width: 0%;
+    }
+    100% {
+      left:0;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,21 @@
+@import "../../styles/global.scss";
+.container {
+    display: flex;
+    justify-content: flex-start;
+    transition: $trans;
+    padding: 20px 0 10px 0;
+    background: $bg-contrast;
+
+    @media #{$break-small} {
+
+    }
+
+    @media #{$break-large} {
+        
+    }
+}
+
+.trans {
+    background-color:rgba(28, 39, 59, 0.5);
+}
+

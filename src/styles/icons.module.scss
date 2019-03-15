@@ -1,0 +1,13 @@
+@import "./global.scss";
+.middle {
+  vertical-align: middle;
+}
+.center {
+  color: white;
+  transition: all 0.5 $trans;
+  border-radius: 50%;
+
+  &:hover {
+    color: $blue-intense;
+  }
+}

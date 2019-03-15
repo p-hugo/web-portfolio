@@ -1,0 +1,29 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+
+
+// Font
+$font: 'Roboto', sans-serif;
+
+
+// Colors
+$bg: #17212D;
+$bg-contrast: #1C273B;
+$shadow: #263043;
+$card-main: #1B2534;
+$red: #F06547;
+$red-notification: #FF3A3C;
+$orange: #F19837;
+$blue-neutral: #4E74B9;
+$blue-intense: #4C85FF;
+$green-neutral: #00B59E;
+$green-intense: #49DA92;
+$font-color: white;
+
+
+// Media Queries
+$break-small: "only screen and (min-width : 320px) and (max-width : 480px)";
+$break-large: "only screen and (min-width : 481px)";
+
+// Misc
+$trans:  all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
