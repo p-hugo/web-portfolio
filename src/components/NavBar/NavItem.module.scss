@@ -58,11 +58,11 @@
   color: $blue-intense;
   text-shadow: 0 0 100px $blue-intense;
 
-  @media #{$break-small}{
-    &::after{
-        height: 100%;
-        background-color: $blue-intense;
-        box-shadow: 0 0 10px 1px $blue-intense;
+  @media #{$break-small} {
+    &::after {
+      height: 100%;
+      background-color: $blue-intense;
+      box-shadow: 0 0 10px 1px $blue-intense;
     }
   }
 

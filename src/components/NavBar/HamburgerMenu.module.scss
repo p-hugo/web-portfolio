@@ -1,0 +1,56 @@
+@import "../../styles/global.scss";
+
+.burger_menu {
+  margin: 0;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  right: 0px;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: $trans;
+}
+
+.burger_line {
+  position: absolute;
+  top: 30%;
+  height: 2px;
+  width: 100%;
+  background-color: $font-color;
+  transition: $trans;
+
+  &:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+
+  &:nth-child(3) {
+    top: 70%;
+  }
+}
+
+.active {
+    left: 120%;
+  & * {
+    top: 50%;
+    transform: rotate(135deg);
+  
+    &:nth-child(2) {
+      width: 0;
+      transform: none;
+    }
+  
+    &:nth-child(3) {
+        top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@media #{$break-large} {
+  .burger_menu {
+    visibility: hidden;
+  }
+}
