@@ -5,16 +5,14 @@ import NavBar from '../components/NavBar'
 import { FaGithub, FaReact } from 'react-icons/fa'
 import Content from '../components/Content'
 import styles from '../styles/icons.module.scss'
-import HamburgerMenu from '../components/NavBar/HamburgerMenu'
 
 export default () => (
   <Layout className='video-main' transparent>
-    <HamburgerMenu />
+    <NavBar transparent />
     <video autoPlay muted loop id='video'>
       <source src='static/video/code_video.mp4' type='video/mp4' />
       Your browser does not support HTML5 video.
     </video>
-    <NavBar transparent />
     <Content>
       <Title size={100} fw={600}>
         I Build Modern Web Apps with Tomorrow's Tools{' '}

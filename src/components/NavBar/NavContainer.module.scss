@@ -7,20 +7,23 @@
   background: $bg-contrast;
 
   @media #{$break-small} {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    padding: 0 0 0 10px;
     left: -1000px;
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 98vw;
+    padding: 0 0 0 10px;
     background: $bg;
     border-bottom: 2px solid $font-color;
   }
+}
 
-  @media #{$break-large} {
-  }
+.show {
+  left: 0;
 }
 
 .trans {
-  background-color: rgba(28, 39, 59, 0.5);
+  background-color: rgba(28, 39, 59, 0.05);
 }
+
+

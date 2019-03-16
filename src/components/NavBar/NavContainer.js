@@ -1,11 +1,28 @@
 import React from 'react'
-import {container, trans} from './NavContainer.module.scss'
+import PropTypes from 'prop-types'
+import { container, trans, show } from './NavContainer.module.scss'
 import NavItem from './NavItem'
-export default ({transparent}) => (
-  <div className={transparent ? `${container} ${trans}`: container}>
-    <NavItem to="/">Welcome</NavItem>
-    <NavItem to="/about">About</NavItem>
-    <NavItem to="/react">React</NavItem>
-    <NavItem to="/creative-corner">Creative Corner</NavItem>
+
+const NavContainer = ({ transparent, triggered }) => (
+  <div className={getClasses(transparent, triggered)}>
+    <NavItem to='/'>Welcome</NavItem>
+    <NavItem to='/about'>About</NavItem>
+    <NavItem to='/react'>React</NavItem>
+    <NavItem to='/creative-corner'>Creative Corner</NavItem>
   </div>
 )
+
+NavContainer.propTypes = {
+  transparent: PropTypes.bool.isRequired,
+  triggered: PropTypes.bool.isRequired
+}
+
+function getClasses (transparent, triggered) {
+  let classes = ''
+  if (transparent) classes += `${trans} `
+  if (triggered) classes += `${show} `
+  classes += `${container}`
+  return classes
+}
+
+export default NavContainer
