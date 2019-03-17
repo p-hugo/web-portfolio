@@ -7,19 +7,19 @@
   background: $bg-contrast;
 
   @media #{$break-small} {
-    left: -1000px;
+    top: -1000px;
     position: absolute;
     flex-direction: column;
     align-items: flex-end;
     width: 98vw;
     padding: 0 0 0 10px;
-    background: $bg;
-    border-bottom: 2px solid $font-color;
+    background: $bg-contrast;
+    border-bottom: 2px solid $blue-intense;
   }
 }
 
 .show {
-  left: 0;
+  top: 50px;
 }
 
 .trans {
