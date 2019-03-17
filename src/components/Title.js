@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Title = styled.h1`
-  font-size: ${props => (props.size ? `${props.size}px` : '50px')};
+  font-size: 3.8rem;
   margin: 10px 0 0 0;
   padding: 10px;
   margin: 10px auto;

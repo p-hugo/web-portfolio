@@ -1,10 +1,8 @@
-import styled from 'styled-components'
+import React from 'react'
+import styles from './Content.module.scss'
 
-const Content = styled.section`
-  width: 80%;
-  margin: 0 auto;
-  font-family: var(--font);
-  color: white;
-`
+const Content = ({ children }) => (
+  <main className={styles.content}>{children}</main>
+)
 
-export default Content
+export default Content;

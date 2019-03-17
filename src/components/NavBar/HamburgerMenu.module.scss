@@ -18,13 +18,13 @@
   position: absolute;
   top: 30%;
   height: 2px;
-  width: 100%;
+  width: 80%;
   background-color: $font-color;
   transition: $trans;
 
   &:nth-child(2) {
     top: 50%;
-    width: 80%;
+    width: 60%;
   }
 
   &:nth-child(3) {
@@ -36,7 +36,8 @@
   & * {
     top: 50%;
     transform: rotate(135deg);
-  
+    background-color: $red;
+    box-shadow: 0 0 10px $red;
     &:nth-child(2) {
       width: 0;
       transform: none;

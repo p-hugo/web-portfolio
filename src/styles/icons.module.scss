@@ -5,8 +5,7 @@
 .center {
   color: white;
   transition: all 0.5 $trans;
-  border-radius: 50%;
-
+  margin: 0 10px;
   &:hover {
     color: $blue-intense;
   }
