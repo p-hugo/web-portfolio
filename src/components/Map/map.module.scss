@@ -1,0 +1,13 @@
+@import '../../styles/global.scss';
+
+@media #{$break-small}{
+    .contain{
+        height: 33vh;
+    }
+}
+
+@media #{$break-large}{
+    .contain{
+        height: 400px;
+    }
+}

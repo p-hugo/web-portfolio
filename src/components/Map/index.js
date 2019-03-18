@@ -1,26 +1,27 @@
-
 import mapboxgl from 'mapbox-gl'
 import React from 'react'
 import styled from 'styled-components'
 import * as dot from '../../../static/img/dot.png'
-
+import {contain} from './map.module.scss'
+// TODO: make the height smaller in mobile devices
 const Contain = styled.div`
   position: relative;
   margin: 0 0 50px 0;
-  box-shadow: 0 10px 50px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+  width: 100%;
 `
 
 export default class Map extends React.Component {
-  createMap() {
+  createMap () {
     const zoom = 10
     const iconSize = 0.5
-    const coordinates = [-73.935242, 40.730610]
-    const point = [-74.016578, 40.779816]
+    const coordinates = [-74.001328, 40.73061]
+    const point = [-74.023730, 40.779401]
     const map = new mapboxgl.Map({
       center: coordinates,
       container: 'map',
       style: 'mapbox://styles/perdomoh/cjtc8fe9205yq1fnuodwagpus',
-      zoom: zoom,
+      zoom: zoom
     })
     map.scrollZoom.disable()
 
@@ -34,7 +35,7 @@ export default class Map extends React.Component {
           id: 'dot',
           layout: {
             'icon-image': 'pin',
-            'icon-size': iconSize,
+            'icon-size': iconSize
           },
           source: {
             data: {
@@ -42,31 +43,32 @@ export default class Map extends React.Component {
                 {
                   geometry: {
                     coordinates: point,
-                    type: 'Point',
+                    type: 'Point'
                   },
-                  type: 'Feature',
-                },
+                  type: 'Feature'
+                }
               ],
-              type: 'FeatureCollection',
+              type: 'FeatureCollection'
             },
-            type: 'geojson',
+            type: 'geojson'
           },
-          type: 'symbol',
+          type: 'symbol'
         })
       })
     })
   }
 
-  componentDidMount() {
-    mapboxgl.accessToken ='pk.eyJ1IjoicGVyZG9tb2giLCJhIjoiY2pwNjhxdW5pMWJrNDNsczBhbnM0YnB0aCJ9.1foZ2zl63oD45LNz63WCxA'
+  componentDidMount () {
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoicGVyZG9tb2giLCJhIjoiY2pwNjhxdW5pMWJrNDNsczBhbnM0YnB0aCJ9.1foZ2zl63oD45LNz63WCxA'
     this.createMap()
   }
 
-  render() {
+  render () {
     return (
-        <Contain>
-          <div id={'map'} style={{width: '100%', height: 400}}/>
-        </Contain>
+      <Contain className={contain}>
+        <div id={'map'} style={{ width: '100%', height: '100%' }} />
+      </Contain>
     )
   }
 }
