@@ -17,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "^2.1.24",
+    "gatsby-plugin-react-svg": "^2.1.0",
     "gatsby-plugin-sass": "^2.0.10",
     "mapbox-gl": "^0.53.1",
     "node-sass": "^4.11.0",

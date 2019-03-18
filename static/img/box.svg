@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="533px" height="505px" viewBox="0 0 533 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-26.8%" y="-53.7%" width="153.7%" height="207.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle_Isometric" transform="translate(43.000000, 0.000000)">
+            <polygon id="Rectangle_Top_Isometric-Copy" fill="#EEC090" opacity="0.172386533" filter="url(#filter-1)" points="0 359.5 256 231.5 447 327 191 455"></polygon>
+            <polygon id="Rectangle_Left_Isometric" fill="#D7965E" points="191 384 0 288.5 0 128.5 191 224"></polygon>
+            <polygon id="Rectangle_Right_Isometric-Copy" fill="#FFFFFF" points="191 384 447 256 447 96 191 224"></polygon>
+            <polygon id="Rectangle_Right_Isometric" fill-opacity="0.82665308" fill="#D7965E" points="191 384 447 256 447 96 191 224"></polygon>
+            <polygon id="Rectangle_Top_Isometric" fill="#EEC090" points="0 128.5 256 0.5 447 96 191 224"></polygon>
+        </g>
+    </g>
+</svg>
