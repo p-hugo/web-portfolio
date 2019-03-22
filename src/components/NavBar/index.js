@@ -8,6 +8,10 @@ export default class NavBar extends Component {
     transparent: PropTypes.bool.isRequired
   }
 
+  static defaultProps = {
+    transparent: false
+  }
+
   constructor (props) {
     super(props)
     this.state = {

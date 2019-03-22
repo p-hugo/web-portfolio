@@ -5,7 +5,6 @@
   font-family: $font;
   font-weight: 400;
   font-size: 25px;
-
   // sizing:
   margin: 0 20px;
   position: relative;
@@ -19,7 +18,7 @@
       content: "";
       position: absolute;
       bottom: -10px;
-      left: 0%;
+      left: 50%;
       transition: $trans;
       width: 0px;
       height: 1px;
@@ -27,6 +26,12 @@
 
     &:hover {
       color: $blue-intense;
+      &::after{
+        background-color: $blue-intense;
+        box-shadow: 0 0px 20px 1px $blue-intense;
+        left: 0%;
+        width: 100%;
+      }
     }
   }
 
@@ -69,9 +74,10 @@
 
   @media #{$break-large} {
     &::after {
+      left: 0%;
       background-color: $blue-intense;
       box-shadow: 0 0px 20px 1px $blue-intense;
-      animation: slide 0.15s linear 0s 1 forwards;
+      width: 100%;
     }
   }
 }

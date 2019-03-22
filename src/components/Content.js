@@ -46,6 +46,11 @@ const Content = styled.main`
       font-size: 42px;
     }
   }
+
+  code {
+    background-color: #2A303C;
+    display: block;
+  }
 `
 Content.defaultProps = {
   theme: {
