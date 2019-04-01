@@ -7,8 +7,7 @@ const NavContainer = ({ transparent, triggered }) => (
   <div className={getClasses(transparent, triggered)}>
     <NavItem to='/'>Welcome</NavItem>
     <NavItem to='/about/'>About</NavItem>
-    <NavItem to='/react/'>React</NavItem>
-    <NavItem to='/creative-corner/'>Creative Corner</NavItem>
+    <NavItem to='/projects/'>Projects</NavItem>
   </div>
 )
 

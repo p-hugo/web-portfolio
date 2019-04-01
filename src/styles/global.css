@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 :root {
   --font: "Roboto", sans-serif;
+  --font-alt: "Merienda", cursive;
   --bg: #17212d;
   --bg-contrast: #1c273b;
   --shadow: #263043;

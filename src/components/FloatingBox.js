@@ -33,8 +33,8 @@ const FloatingBox = () => (
   <Spring {...springConfig} {...styleMorph}>
     {props => (
       <Container style={props}>
-        <Box class='move-up-down' />
-        <BoxShadow class='shadow' />
+        <Box className='move-up-down' />
+        <BoxShadow className='shadow' />
       </Container>
     )}
   </Spring>

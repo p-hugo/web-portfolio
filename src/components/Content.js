@@ -48,8 +48,13 @@ const Content = styled.main`
   }
 
   code {
-    background-color: #2A303C;
+    background-color: #2a303c;
     display: block;
+  }
+  a {
+    color: var(--orange);
+    font-style: italic;
+    font-weight: 900;
   }
 `
 Content.defaultProps = {
@@ -58,6 +63,5 @@ Content.defaultProps = {
     font_color: 'white'
   }
 }
-
 
 export default Content
