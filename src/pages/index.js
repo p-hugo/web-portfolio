@@ -5,7 +5,7 @@ import { FaGithub, FaReact, FaHtml5, FaCss3, FaJs, FaHeart } from 'react-icons/f
 import Content from '../components/Content'
 import styles from '../styles/icons.module.scss'
 import CenteredDiv from '../components/CenteredDiv'
-import * as video from '../../static/video/code_video.mp4'
+import * as video from '../../static/video/v001.mp4';
 
 export default () => (
   <Layout className='video-main' transparent>
@@ -39,6 +39,8 @@ export default () => (
           <FaGithub size='4rem' className={styles.center} />
         </a>
       </CenteredDiv>
+      <p className="attribution">Video by <a href="https://www.pexels.com/video/person-working-on-his-laptop-1851768/">Pexels</a></p>
     </Content>
+    
   </Layout>
 )

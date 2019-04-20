@@ -13,7 +13,6 @@ export default () => (
   <Layout>
     <NavBar />
     <Content>
-      <h1 className='c_blue alt_font'>I present to you: A Not-So-Short Bio</h1>
       <figure className={figure}>
         <img src={profile} className={img} alt='Hugo Perdomo' />
         <CenteredDiv>
@@ -47,10 +46,15 @@ export default () => (
           </a>
         </CenteredDiv>
       </figure>
-      <p>IT student who loves developing all things web related. Here is what my current toolbox looks like:</p>
-      <ToolBox />
+      <CenteredDiv>
+        <p>I'm an IT student who loves developing all things web related.</p>
+      </CenteredDiv>
+      <CenteredDiv><h2>Current Toolbox:</h2></CenteredDiv>
+    </Content>
+    <ToolBox />
+    <Content>
       <h2 className="alt_font">A little background</h2>
-      <hr/>
+      <hr />
       <p>
         As a freshman in college I thought pursuing a career in finance was the
         most secure option. A year in, I discovered that a "secure" plan doesn't

@@ -10,6 +10,7 @@ const Content = styled.main`
 
   p {
     line-height: 1.58;
+    letter-spacing: 0.02rem;
   }
 
   @media only screen and (min-width: 637px) {
@@ -23,6 +24,7 @@ const Content = styled.main`
     h5,
     h6 {
       font-size: 42px;
+      letter-spacing: 0.05rem;
     }
     h1 {
       font-size: 60px;

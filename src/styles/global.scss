@@ -1,10 +1,10 @@
 // Imports
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 // Font
 $font: "Roboto", sans-serif;
-$alt-font: "Merienda", cursive;
+$alt-font: 'Source Sans Pro', sans-serif;
 
 // Colors
 $bg: #17212d;
@@ -36,5 +36,9 @@ $trans: all 0.35s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 @media #{$break-small} {
   :root {
     font-size: 15px;
+  }
+
+  #video {
+    display: none;
   }
 }

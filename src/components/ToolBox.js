@@ -13,39 +13,50 @@ import * as Java from '../../static/img/java.svg'
 import * as Php from '../../static/img/php.svg'
 import * as Python from '../../static/img/python.svg'
 import * as Docker from '../../static/img/docker.svg'
-import {FaReact}from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-gap: 5px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 30px 0px;
   grid-template-rows: auto;
-  justify-content: center;
-  align-items: baseline;
+  align-items: center;
+  justify-items: center;
+  background: #263043;
+  width: calc(100%-10px);
+  padding: 50px 10px;
+  
   /* Small screens */
   @media (max-width: 636px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px 0;
+    grid-gap: 5px 0;
     align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    * {
+      width: 30px;
+      height: 30px;
+      justify-self: center;
+    }
   }
   margin: 40px 0;
 `
+
 const ToolBox = () => (
   <Grid>
-      <Js />
-      <Ts />
-      <Node />
-      <FaReact size={"4em"} color="#62DBFB"/>
-      <Webpack />
-      <Babel />
-      <Express />
-      <Mongo />
-      <Sass />
-      <Docker />
-      <Java />
-      <Android/>
-      <Php />
-      <Python />
+    <Js />
+    <Ts />
+    <Node />
+    <FaReact size={"4em"} color="#62DBFB" />
+    <Webpack />
+    <Babel />
+    <Express />
+    <Mongo />
+    <Sass />
+    <Docker />
+    <Java />
+    <Android />
+    <Php />
+    <Python />
   </Grid>
 )
 
