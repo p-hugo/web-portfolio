@@ -20,7 +20,7 @@
     "gatsby-plugin-react-svg": "^2.1.0",
     "gatsby-plugin-sass": "^2.0.10",
     "mapbox-gl": "^0.53.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-icons": "^3.5.0",
